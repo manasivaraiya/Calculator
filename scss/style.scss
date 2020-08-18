@@ -9,7 +9,7 @@
     outline: none;
 }
 
-$bg-color: #303030;
+$bg-color: #121212;
 $bg-text: #fff;
 
 * {
@@ -19,9 +19,7 @@ $bg-text: #fff;
 }
 
 body {
-    background: url('../img/img14.jpg');
-    background-size: 100% 100%;
-    // background: radial-gradient(#00AAFF, #00FF6C);
+    background: #000;
 }
 
 .centercal {
@@ -30,22 +28,20 @@ body {
 }
 
 form {
-    width: 400px;
-    height: 520px;
-    box-shadow: 0 0 20px 5px grey;
-    z-index: 10;
-    opacity: 0.9;
+    width: 360px;
+    height: 573px;
+    box-shadow: 0 0 10px 5px rgba(245, 122, 51, 0.76);
+    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #00000057);
 }
+
 
 #app_name {
     width: inherit;
-    padding: 2px 0px 2px 10px;
+    padding: 4px 0px 4px 10px;
     font-size: 0.8rem;
     background-color: $bg-color;
     color: $bg-text;
     @include line();
-    font-family: sans-serif;
-    opacity: 1;
 }
 
 #display_ans{
@@ -68,29 +64,35 @@ form {
 
 .layer2 {
     width: inherit;
-    height: 40px;
+    height: 90px;
     display: flex;
     justify-content: center;
 }
 
-input{
+input, button{
     flex: 1;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    background-color: $bg-color;
     color: $bg-text;      
     @include line();
-    border: 1px solid #504F4F;
+    border: 1px solid #504f4f1a;
 
-    &:hover {
-        background-color: #474747;
+    &:active {
+        background-color: #ff651dda;
     }
-}
-
-.main_num {
-    background-color: #101010;
 }
 
 .operator {
     background-color: $bg-color;
-    
+    color: #FE7436;
+
+    &:active {
+        color: #000;
+    }
 }
 
+.circle {
+    border-radius: 50%;
+    background-color: #FE7436;
+    color: $bg-text;
+}
