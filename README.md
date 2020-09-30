@@ -5,3 +5,4 @@
 ### Basic calculator using CSS and JavaScript
 The theme of the calculator is inspired by Xiaomi's Default Calculator
 
+This is simple calculator to practice javascript
