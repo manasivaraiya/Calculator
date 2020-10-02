@@ -1,20 +1,21 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 int main()
 {
     //declare variable
     double x;
-    double perfect_square;
+    double square_root;
 
      // take input from end-user
     cout << "Enter the Number :: ";
     cin >> x;
 
-    // calculate perfect square value
-    perfect_square = x*x;
+    // calculate square root value
+    square_root = sqrt(x);
 
     // display result
-    cout << "Perfect Square= " << perfect_square << endl;
+    cout << "Square Root= " << square_root << endl;
 
     return 0;
 }
