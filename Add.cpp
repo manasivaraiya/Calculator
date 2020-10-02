@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
@@ -12,7 +12,7 @@ int main()
 
   // calculate sum value
   sum = num1 + num2 + num3;
-  
+
   // calculate average value
   average = sum / 3;
 

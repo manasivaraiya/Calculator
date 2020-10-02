@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="scss/style.css">
-    <title>cal</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="stylesheet" href="scss/style.css">
+
+  <title>calculator</title>
 </head>
+
 <body>
-    <div class="centercal">
-        <form name="cal">
-            <input type="text" value="Sanchit's Calculator" id="app_name">
+  <div class="centercal">
+    <form name="cal">
+      <input type="text" value="Simple Calculator" id="app_name" />
 
-            <input type="text" name="answers" id="display_ans">
+      <input type="text" name="answers" id="display_ans" />
 
-            <div class="layer2">
-                <input type="button" value="C" class="operator" onclick="cal.answers.value = ''  ">
-                <button type="button" id="cross" class="operator" onclick=" cal.answers.value = cal.answers.value.substring(0, cal.answers.value.length - 1) "><i class="fas fa-backspace"></i></button>
-                <input type="button" value="%" class="operator" onclick="cal.answers.value += '%'  ">
-                <input type="button" class="operator" value="/" onclick="cal.answers.value +='/' ">
-
-
-            </div>
-            <div class="layer1">
-                <input type="button" class="main_num" value="7" onclick="cal.answers.value +='7' ">
-                <input type="button" class="main_num" value="8" onclick="cal.answers.value +='8' ">
-                <input type="button" class="main_num" value="9" onclick="cal.answers.value +='9' ">
-                <input type="button" class="operator" value="x" onclick="cal.answers.value +='*' ">
-            </div>
-            <div class="layer1">
-                <input type="button" class="main_num" value="4" onclick="cal.answers.value +='4' ">
-                <input type="button" class="main_num" value="5" onclick="cal.answers.value +='5' ">
-                <input type="button" class="main_num" value="6" onclick="cal.answers.value +='6' ">
-                <input type="button" class="operator" value="-" onclick="cal.answers.value +='-' ">
-            </div>
-            <div class="layer1">
-                <input type="button" class="main_num" value="1" onclick="cal.answers.value +='1' ">
-                <input type="button" class="main_num" value="2" onclick="cal.answers.value +='2' ">
-                <input type="button" class="main_num" value="3" onclick="cal.answers.value +='3' ">
-                <input type="button" class="operator" value="+" onclick="cal.answers.value +='+' ">
-            </div>
-            <div class="layer1">
-                <input type="button" class="main_num" value="00" onclick="cal.answers.value += '00' ">
-                <input type="button" class="main_num" value="0" onclick="cal.answers.value +='0' ">
-                <input type="button" class="operator" value="." onclick="cal.answers.value +='.' ">
-                <input type="button" class="operator circle" value="=" onclick="cal.answers.value = eval(cal.answers.value) ">
-            </div>
-        </form>
-    </div>
+      <div class="layer2">
+        <input type="button" value="C" class="operator" onclick="cal.answers.value = ''  " />
+        <button type="button" id="cross" class="operator"
+          onclick=" cal.answers.value = cal.answers.value.substring(0, cal.answers.value.length - 1) ">
+          <i class="fas fa-backspace"></i>
+        </button>
+        <input type="button" value="%" class="operator" onclick="cal.answers.value += '%'  " />
+        <input type="button" class="operator" value="/" onclick="cal.answers.value +='/' " />
+      </div>
+      <div class="layer1">
+        <input type="button" class="main_num" value="7" onclick="cal.answers.value +='7' " />
+        <input type="button" class="main_num" value="8" onclick="cal.answers.value +='8' " />
+        <input type="button" class="main_num" value="9" onclick="cal.answers.value +='9' " />
+        <input type="button" class="operator" value="x" onclick="cal.answers.value +='*' " />
+      </div>
+      <div class="layer1">
+        <input type="button" class="main_num" value="4" onclick="cal.answers.value +='4' " />
+        <input type="button" class="main_num" value="5" onclick="cal.answers.value +='5' " />
+        <input type="button" class="main_num" value="6" onclick="cal.answers.value +='6' " />
+        <input type="button" class="operator" value="-" onclick="cal.answers.value +='-' " />
+      </div>
+      <div class="layer1">
+        <input type="button" class="main_num" value="1" onclick="cal.answers.value +='1' " />
+        <input type="button" class="main_num" value="2" onclick="cal.answers.value +='2' " />
+        <input type="button" class="main_num" value="3" onclick="cal.answers.value +='3' " />
+        <input type="button" class="operator" value="+" onclick="cal.answers.value +='+' " />
+      </div>
+      <div class="layer1">
+        <input type="button" class="main_num" value="00" onclick="cal.answers.value += '00' " />
+        <input type="button" class="main_num" value="0" onclick="cal.answers.value +='0' " />
+        <input type="button" class="operator" value="." onclick="cal.answers.value +='.' " />
+        <input type="button" class="operator circle" value="=" onclick="cal.answers.value = eval(cal.answers.value) " />
+      </div>
+    </form>
+  </div>
 </body>
+
 </html>
